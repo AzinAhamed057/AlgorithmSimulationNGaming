@@ -109,8 +109,8 @@ span{
 
 
 .start {
-    /* background-color: green;
-    fill: red; */
+    background-color: green;
+    fill: red;
 
 }
 .start::before {
