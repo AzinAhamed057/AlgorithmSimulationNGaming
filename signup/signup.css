@@ -1,0 +1,98 @@
+
+header .item:nth-of-type(1){
+    background-color: #072743;
+    height: 60px;
+    padding: 7px 20px;
+    text-align: center;
+}
+header .item:nth-of-type(1) a{
+    color:white;
+    font-size: 30px;
+    font-weight: 900;
+    display: block;
+    padding: 10px 0px 5px 0px;
+}
+.item:nth-of-type(1) a:hover{
+    transform: rotate(-5deg);
+}
+header .item:nth-of-type(2){
+    
+    background-color: #31516e;
+    height: 750px;
+    color: white;
+}
+
+.title{
+    margin: 0px 0px 0px 550px;
+    padding: 40px 0px 20px 0px;
+}
+.googhub{
+    font-size: 20px;
+    font-weight: 10px;
+    margin: 0px 550px;
+}
+.google{
+    margin: 10px 0px;
+    text-align: center;
+    display: block;
+    color: white;
+    background-color: red;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    padding:10px 0px;
+}
+.github{
+    margin: 10px 0px;
+    text-align: center;
+    display: block;
+    color: white;
+    background-color: #072743;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding:10px 0px;
+}
+.google:hover, .github:hover{
+    transform: translateY(-3px);
+}
+
+.form{
+    margin: 20px 550px;
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.Button{
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+    margin: 10px 0px;
+    background-color: #072743;
+    color: white;
+}
+.Button:hover{
+    transform: translateY(-2px);
+}
+.haveacc{
+    color: white;
+    display:block;
+    text-decoration: underline;
+    margin: 0px 0px 0px 650px;
+}
+.haveacc:hover{
+    transform: scale(1.02);
+}
+
+

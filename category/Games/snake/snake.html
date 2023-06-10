@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Snake Game</title>
+        <link rel="stylesheet" href="snake.css">
+        <link rel="stylesheet" href="../../../basic/basic.css">
+        <script src="https://kit.fontawesome.com/077c54882a.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <header class="flex">
+        <div class="flex" >
+            <a href="../../../home/home.html">
+                <h1>CodeGo</h1>
+            </a>
+        </div>
+        
+        <div class="flex">
+            <!-- <a class="board" href="../Bfs/bfs.html">Try BFS</a> -->
+            <a class="my-button" href="#" onclick="start()">Start Game</a>
+            <!-- <a class="board" href="dfs.html">Clear Board</a> -->
+            <!-- <a class="my-button" href="#" onclick="Maze()">Create Maze</a> -->
+            <!-- <a class="board" href="#" onclick="clc()">Clear Path</a> -->
+            <span class="points" id="Point-display">Ponts: 0</span>
+        </div>
+    </header>
+    <div class="item">
+        <div class="Flex">
+
+            <div class="flex">
+                <div class="grid-start Grid"></div>
+                <span>Snake</span>
+            </div>
+            <div class="flex">
+                <div class="grid-un Grid"></div>
+                <span>Empty Cell</span>
+            </div>
+        
+            <div class="flex">
+                <div class="grid-wall Grid"></div>
+                <span>Wall</span>
+            </div>
+
+        </div>
+        <h1>Snake Game</h1>
+       
+        <div class="grid-container"></div>
+        
+        <script src="script.js"></script>    
+    </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+li {
+    list-style-type: none;
+}
+
+
+header {
+    background-color: #072743;
+    color: #fff;
+    padding: 12px 20px;
+    height: 50px;
+}
+
+header h1 {
+    margin: 0 14px;
+}
+header h1:hover{
+    transform: rotate(-3deg);
+}
+
+header a {
+    color: white;
+    margin: 0 14px;
+    font-size: 18px;
+}
+
+
+input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.my-button {
+    padding: 10px 12px;
+    border-radius: 5px;
+}
+.my-button:hover{
+    border: 2px solid red;
+}
+.ex{
+    width: 100%;
+}
+.board{
+    padding: 10px 12px;
+    border-radius: 5px;
+}
+.board:hover{
+    transform: translateY(-2px);
+}
+
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item h1 {
+    padding: 0px 0px 20px 0px;
+}
+
+.Flex{
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    padding: 20px 20px;
+}
+
+.Grid{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
+.grid-start{
+    content: url("person.svg");
+    border: 0px;
+}
+.grid-target{
+    content: url("house.svg");
+    border: 0px;
+}
+.grid-un{
+    background-color: lightcyan;
+}
+.grid-vis{
+    background-color: #99edc3;
+}
+.grid-vis1{
+    background-color: #00997d;
+}
+.grid-path{
+    content: url("foot.svg");
+    border: 0px;
+}
+.grid-wall{
+    background-color: #005e6a;
+}
+span{
+    padding: 0px 10px;
+    font-size: 18px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(50, 30px);
+    grid-template-rows: repeat(17, 30px);
+    padding-bottom: 5px;
+}
+
+.grid {
+    width: 30px;
+    height: 30px;
+    background-color: lightcyan;
+    border: 1px solid black;
+}
+
+.wall {
+    background-color: #005e6a;
+}
+
+
+.start {
+    background-color: lightcyan;
+}
+.start::before {
+    content: url('person.svg');
+}
+
+.des {
+    background-color: lightcyan;
+}
+.des::before {
+    content: url('house.svg');
+}
+
+.grid.shortest-path {
+    background-color: lightcyan !important;
+}
+.grid.shortest-path::before{
+    content: url('foot.svg');
+}
+
+.grid.visited {
+    background-color: #99edc3;
+}
+.visited-first {
+    background-color:#00997d;
+}

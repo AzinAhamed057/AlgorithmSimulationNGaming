@@ -1,0 +1,233 @@
+li {
+    list-style-type: none;
+}
+
+
+header {
+    background-color: #072743;
+    color: #fff;
+    padding: 12px 20px;
+    height: 50px;
+}
+
+header h1 {
+    margin: 0 14px;
+}
+header h1:hover{
+    transform: rotate(-3deg);
+}
+
+header a {
+    color: white;
+    margin: 0 14px;
+    font-size: 18px;
+}
+
+
+input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.my-button {
+    font-size: 20px;
+    padding: 10px 12px;
+    border-radius: 5px;
+}
+.my-button:hover{
+    transform: translateY(-2px);
+}
+
+.ex {
+    width: 100%;
+}
+
+.board{
+    font-size: 20px;
+    font-weight: 2px;
+    padding: 10px 12px;
+    border-radius: 5px;
+
+}
+
+.board:hover{
+    border: 2px solid red;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item h1 {
+    padding: 0px 0px 20px 0px;
+    align-items: center;
+}
+
+.Flex {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px 20px;
+}
+
+.Grid {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+.grid-start {
+    content: url("start.svg");
+    border: 0px;
+    fill: red;
+}
+
+.grid-target {
+    content: url('house.svg');
+    border: 0px;
+}
+
+.grid-un {
+    background-color: lightcyan;
+}
+
+.grid-vis {
+    background-color: #00d1b2;
+}
+
+.grid-vis1 {
+    background-color: blue;
+}
+
+.grid-short {
+    background-color: yellow;
+}
+
+.grid-wall {
+    background-color: #005e6a;
+}
+
+span {
+    padding: 0px 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(50, 30px);
+    grid-template-rows: repeat(17, 30px);
+    padding-bottom: 5px;
+}
+
+.grid {
+    width: 30px;
+    height: 30px;
+    background-color: lightcyan;
+    border: 1px solid black;
+}
+
+.wall {
+    background-color: #005e6a;
+}
+
+
+.start {
+    background-color: lightcyan;
+}
+
+.start::before {
+    content: url('start.svg');
+}
+
+.des {
+    background-color: lightcyan;
+}
+
+.des::before {
+    content: url('house.svg');
+}
+
+.grid.shortest-path {
+    background-color: yellow !important;
+}
+
+.grid.visited {
+    background-color: #00d1b2;
+}
+
+.visited-first {
+    background-color: blue;
+}
+
+.spider {
+    content: url("spider.svg");
+    border: 0px;
+}
+
+.dragon {
+    content: url("dragon.svg");
+    ;
+    border: 0px;
+}
+
+.worm {
+    content: url('worm.svg');
+    border: 0px;
+}
+
+#game-over-box {
+    display: none;
+    /* margin-top: 183px; */
+    color: rgb(255, 255, 255);
+    /* -webkit-text-stroke-color: rgb(160, 27, 27);
+    -webkit-text-stroke-width: 2px; */
+    padding: 70px;
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#game-over-box button {
+    background-color: white;
+    color: black !important;
+    font-size: 25px;
+    font-weight: 2px;
+    padding: 20px 22px;
+    border-radius: 5px;
+    z-index: 9999;
+}
+#win-box{
+    display: none;
+    /* margin-top: 183px; */
+    color: rgb(255, 255, 255);
+    /* -webkit-text-stroke-color: rgb(160, 27, 27);
+    -webkit-text-stroke-width: 2px; */
+    padding: 90px;
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#win-box button{
+    background-color: white;
+    color: black !important;
+    font-size: 25px;
+    font-weight: 2px;
+    padding: 20px 22px;
+    border-radius: 5px;
+    z-index: 9999;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bounce Ball</title>
+        <link rel="stylesheet" href="bounce.css">
+        <link rel="stylesheet" href="../../../basic/basic.css">
+        <script src="https://kit.fontawesome.com/077c54882a.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <header class="flex">
+        <div class="flex" >
+            <a href="../../../home/home.html">
+                <h1>CodeGo</h1>
+            </a>
+        </div>
+        
+        <div class="flex">
+            <!-- <a class="board" href="../Bfs/bfs.html">Try BFS</a> -->
+            <a class="board" href="#" onclick="start()">Start Game</a>
+            <a class="board" href="bounce.html">Clear Board</a>
+            <a class="my-button" href="#" onclick="Maze()">Create Maze</a>
+            <!-- <a class="board" href="#" onclick="clc()">Clear Path</a> -->
+        </div>
+    </header>
+    <div class="item">
+        <div class="Flex">
+
+            <div class="flex">
+                <div class="grid-start Grid"></div>
+                <span>Bounce Ball</span>
+            </div>
+            <div class="flex">
+                <div class="grid-target Grid"></div>
+                <span>Target</span>
+            </div>
+            <div class="flex">
+                <div class="grid-un Grid"></div>
+                <span>Empty Cell</span>
+            </div>
+            <div class="flex">
+                <div class="dragon Grid"></div>
+                <div class="worm Grid"></div>
+                <div class="spider Grid"></div>
+                <span>Obstacle</span>
+            </div>
+
+            <div class="flex">
+                <div class="grid-wall Grid"></div>
+                <span>Wall Node</span>
+            </div>
+
+        </div>
+        <h1>Bounce Ball</h1>
+       
+        <div class="grid-container"></div>
+        
+        <script src="script.js"></script>    
+    </div>
+</body>
+</html>

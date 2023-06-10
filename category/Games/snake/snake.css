@@ -1,0 +1,188 @@
+li {
+    list-style-type: none;
+}
+
+
+header {
+    background-color: #072743;
+    color: #fff;
+    padding: 12px 20px;
+    height: 50px;
+}
+
+header h1 {
+    margin: 0 14px;
+}
+
+header h1:hover{
+    transform: rotate(-3deg);
+}
+
+header a {
+    color: white;
+    margin: 0 14px;
+    font-size: 18px;
+}
+
+
+input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.my-button {
+    padding: 10px 12px;
+    border-radius: 5px;
+}
+.my-button:hover{
+    border: 2px solid red;
+}
+.ex{
+    width: 100%;
+}
+.board{
+    padding: 10px 12px;
+    border-radius: 5px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item h1 {
+    padding: 0px 0px 20px 0px;
+}
+
+.Flex{
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    padding: 20px 20px;
+}
+
+.Grid{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
+.grid-start{
+    content:url("start.svg");
+    border: 0px;
+}
+
+.grid-un{
+    background-color: lightcyan;
+}
+
+.grid-wall{
+    background-color: black;
+}
+span{
+    padding: 0px 10px;
+    font-size: 18px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(50, 30px);
+    grid-template-rows: repeat(17, 30px);
+    padding-bottom: 5px;
+}
+
+.grid {
+    width: 30px;
+    height: 30px;
+    background-color: lightcyan;
+    border: 1px solid black;
+}
+
+.wall {
+    background-color: #005e6a;
+}
+
+
+.start {
+    /* background-color: green;
+    fill: red; */
+
+}
+.start::before {
+    content: url('start.svg');    
+}
+
+.des {
+    /* background-color: red; */
+}
+.des::before {
+    content: url('house.svg');
+}
+
+.grid.shortest-path {
+    background-color: yellow !important;
+}
+
+.grid.visited {
+    background-color: #00d1b2;
+}
+.visited-first {
+    background-color: blue;
+}
+
+#game-over-box {
+    display: none;
+    /* margin-top: 183px; */
+    color: rgb(255, 255, 255);
+    /* -webkit-text-stroke-color: rgb(160, 27, 27);
+    -webkit-text-stroke-width: 2px; */
+    padding: 60px 100px 60px 100px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#game-over-box h1{
+    font-size: 80px;
+}
+#game-over-box p{
+    padding: 30px;
+}
+#game-over-box span{
+    font-size: 40px;
+}
+
+
+#game-over-box button{
+    background-color: white;
+    color:black !important;
+    font-size: 25px;
+    font-weight: 2px;
+    padding: 20px 22px;
+    border-radius: 5px;
+    z-index: 9999;
+}
+
+.fruit1{
+    content: url("apple.svg");
+}
+.fruit2{
+    content: url("carrot.svg");
+}
+.fruit3{
+    content: url("lemon.svg");
+}
+.points{
+    font-size: 18px;
+    background-color: #072743;
+    color:white;
+}

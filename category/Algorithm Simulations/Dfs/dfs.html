@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DFS Simulation</title>
+        <link rel="stylesheet" href="dfs.css">
+        <link rel="stylesheet" href="../../../basic/basic.css">
+        <script src="https://kit.fontawesome.com/077c54882a.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <header class="flex">
+        <div class="flex" >
+            <a href="../../../home/home.html">
+                <h1>CodeGo</h1>
+            </a>
+        </div>
+        
+        <div class="flex">
+            <a class="board" href="../Bfs/bfs.html">Try BFS</a>
+            <a class="my-button" href="#" onclick="dfs()">Start DFS</a>
+            <a class="my-button" href="dfs.html">Clear Board</a>
+            <a class="board" href="#" onclick="Maze()">Create Maze</a>
+            <a class="board" href="#" onclick="clc()">Clear Path</a>
+        </div>
+    </header>
+    <div class="item">
+        <div class="Flex">
+
+            <div class="flex">
+                <div class="grid-start Grid"></div>
+                <span>Start Node</span>
+            </div>
+            <div class="flex">
+                <div class="grid-target Grid"></div>
+                <span>Target Node</span>
+            </div>
+            <div class="flex">
+                <div class="grid-un Grid"></div>
+                <span>Unvisited Node</span>
+            </div>
+            <div class="flex">
+                <div class="grid-vis Grid"></div>
+                <div class="grid-vis1 Grid"></div>
+                <span>Visited Node</span>
+            </div>
+            <div class="flex">
+                <div class="grid-path Grid"></div>
+                <span>Path Node</span>
+            </div>
+            <div class="flex">
+                <div class="grid-wall Grid"></div>
+                <span>Wall Node</span>
+            </div>
+
+        </div>
+        <h1>Depth First Search Simulation</h1>
+       
+        <div class="grid-container"></div>
+        
+        <script src="script.js"></script>    
+    </div>
+</body>
+</html>
